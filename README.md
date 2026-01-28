@@ -1,1 +1,1 @@
-## HTML and CSS Course Materials
+## HTML, CSS and JS Course Materials
