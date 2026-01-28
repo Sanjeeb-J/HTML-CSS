@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/1_Lessons/lesson-01/website.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/1_Lessons/lesson-01/website.html"
+    }
+  ]
+}
