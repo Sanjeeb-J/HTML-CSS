@@ -1,0 +1,13 @@
+/* This file contains NO HTML tags, only CSS rules */
+body {
+    background-color: bisque;
+}
+
+h1 {
+    color: navy;
+    text-decoration: underline;
+}
+
+p {
+    font-weight: bold;
+}
