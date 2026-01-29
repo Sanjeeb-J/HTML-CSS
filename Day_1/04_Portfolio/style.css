@@ -2,16 +2,16 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
+    background-color: whitesmoke;
+    color: black;
     text-align: center;
 }
 
 /* Header */
 header {
-    background-color: #2d6cdf;
+    background-color: royalblue;
     color: white;
-    padding: 40px 20px;
+    padding: 40px;
 }
 
 header img {
@@ -33,7 +33,7 @@ section {
 
 /* Headings */
 h2 {
-    color: #2d6cdf;
+    color: royalblue;
 }
 
 /* Skills List */
@@ -43,7 +43,7 @@ ul {
 }
 
 li {
-    background-color: #e3ebff;
+    background-color: lightsteelblue;
     margin: 8px;
     padding: 8px;
     border-radius: 5px;
@@ -52,7 +52,7 @@ li {
 /* Links */
 a {
     text-decoration: none;
-    color: #2d6cdf;
+    color: royalblue;
     font-weight: bold;
 }
 
@@ -60,5 +60,5 @@ a {
 footer {
     margin-top: 30px;
     padding: 15px;
-    background-color: #ddd;
+    background-color: lightgray;
 }
