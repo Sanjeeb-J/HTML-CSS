@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Dev: 3-Day Sprint</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://favicon.io/favicon.ico"
+    />
+
+    <style>
+      /* Day 2: Basic CSS Properties */
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: #1a1a1a; /* Dark mode style like your screenshots */
+        color: #ffffff;
+        margin: 0;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: auto; /* Day 3: Center align <div> */
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      /* Day 3: Grid Layout */
+      .grid-layout {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 25px;
+      }
+
+      /* Day 2 & 3: Div as a container + Box Model */
+      .day-card {
+        background-color: #2d2d2d;
+        border: 1px solid #444; /* Day 2: border */
+        padding: 25px; /* Day 2: padding */
+        border-radius: 12px;
+        display: flex; /* Day 3: Flexbox */
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      h2 {
+        color: #00ff88;
+        margin-top: 0;
+        font-size: 1.8rem;
+      }
+
+      .lesson-list {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+      }
+
+      .lesson-list li {
+        padding: 8px 0;
+        border-bottom: 1px solid #3d3d3d;
+        font-size: 0.95rem;
+        color: #ccc;
+      }
+
+      /* Challenge Button styling */
+      .btn-challenge {
+        background-color: #00ff88;
+        color: #1a1a1a;
+        text-decoration: none;
+        text-align: center;
+        padding: 12px;
+        border-radius: 6px;
+        font-weight: bold;
+        margin-top: 20px;
+        transition: opacity 0.3s;
+      }
+
+      .btn-challenge:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>BootCamp Dashboard</h1>
+        <p>Select a day to begin your technical challenge.</p>
+      </div>
+
+      <div class="grid-layout">
+        <div class="day-card">
+          <div>
+            <h2>Day 1</h2>
+            <ul class="lesson-list">
+              <li>▶ Lesson 1_Basics</li>
+              <li>▶ Lesson 2_Tags</li>
+              <li>▶ Lesson 3_Styles</li>
+              <li>▶ Portfolio Building</li>
+              <li><strong>Deploy to GitHub</strong></li>
+            </ul>
+          </div>
+          <a href="Day_1/Challenge/index.html" class="btn-challenge"
+            >Start Challenge</a
+          >
+        </div>
+
+        <div class="day-card">
+          <div>
+            <h2>Day 2</h2>
+            <ul class="lesson-list">
+              <li>▶ HTML & CSS Color Schemes</li>
+              <li>▶ font-family & font-size</li>
+              <li>▶ Box Model (Padding/Margin)</li>
+              <li>▶ Inline vs Block vs Inline-block</li>
+            </ul>
+          </div>
+          <a href="#" class="btn-challenge">Start Challenge</a>
+        </div>
+
+        <div class="day-card">
+          <div>
+            <h2>Day 3</h2>
+            <ul class="lesson-list">
+              <li>▶ Favicon Implementation</li>
+              <li>▶ HTML Tables for Data</li>
+              <li>▶ Div Containers</li>
+              <li>▶ Flexbox & Grid Systems</li>
+            </ul>
+          </div>
+          <a href="#" class="btn-challenge">Start Challenge</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
