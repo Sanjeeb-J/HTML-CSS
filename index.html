@@ -13,18 +13,22 @@
     />
 
     <style>
-      /* Day 2: Basic CSS Properties */
       body {
         font-family: "Segoe UI", Arial, sans-serif;
-        background-color: #1a1a1a; /* Dark mode style like your screenshots */
+        background-color: #1a1a1a;
         color: #ffffff;
         margin: 0;
         padding: 40px 20px;
       }
 
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+
       .container {
         max-width: 1100px;
-        margin: auto; /* Day 3: Center align <div> */
+        margin: auto;
       }
 
       .header {
@@ -32,20 +36,18 @@
         margin-bottom: 50px;
       }
 
-      /* Day 3: Grid Layout */
       .grid-layout {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 25px;
       }
 
-      /* Day 2 & 3: Div as a container + Box Model */
       .day-card {
         background-color: #2d2d2d;
-        border: 1px solid #444; /* Day 2: border */
-        padding: 25px; /* Day 2: padding */
+        border: 1px solid #444;
+        padding: 25px;
         border-radius: 12px;
-        display: flex; /* Day 3: Flexbox */
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
@@ -69,7 +71,6 @@
         color: #ccc;
       }
 
-      /* Challenge Button styling */
       .btn-challenge {
         background-color: #00ff88;
         color: #1a1a1a;
@@ -99,8 +100,30 @@
           <div>
             <h2>Day 1</h2>
             <ul class="lesson-list">
-              <li>▶ Lesson 1_Basics</li>
-              <li>▶ Lesson 2_Tags</li>
+              <li>
+                ▶ <a href="/Day_1/01. Basics/index.html">Lesson 1_Basics</a>
+                <a
+                  href="/Day_1/01. Basics/challenge/index.html"
+                  style="
+                    display: block;
+                    margin: 10px 0 5px 25px;
+                    color: lightcoral;
+                  "
+                  >Challenge</a
+                >
+              </li>
+              <li>
+                ▶ <a href="/Day_1/02. Tags/1_paragraph.html">Lesson 2_Tags</a>
+                <a
+                  href="/Day_1/01. Basics/challenge/index.html"
+                  style="
+                    display: block;
+                    margin: 10px 0 5px 25px;
+                    color: lightcoral;
+                  "
+                  >Challenge</a
+                >
+              </li>
               <li>▶ Lesson 3_Styles</li>
               <li>▶ Portfolio Building</li>
               <li><strong>Deploy to GitHub</strong></li>
@@ -111,7 +134,7 @@
           >
         </div>
 
-        <div class="day-card">
+        <!-- <div class="day-card">
           <div>
             <h2>Day 2</h2>
             <ul class="lesson-list">
@@ -124,9 +147,9 @@
           <a href="/Day_2/Challenge/index.html" class="btn-challenge"
             >Start Challenge</a
           >
-        </div>
+        </div> -->
 
-        <div class="day-card">
+        <!-- <div class="day-card">
           <div>
             <h2>Day 3</h2>
             <ul class="lesson-list">
@@ -139,7 +162,7 @@
           <a href="/Day_3/Challenge/index.html" class="btn-challenge"
             >Start Challenge</a
           >
-        </div>
+        </div> -->
       </div>
     </div>
   </body>
