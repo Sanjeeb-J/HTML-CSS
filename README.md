@@ -1,1 +1,1 @@
-## HTML, CSS and JavaScript Course Materials
+## HTML, CSS and JavaScript Bootcamp Material 
