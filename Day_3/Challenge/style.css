@@ -12,6 +12,11 @@ body {
   border-radius: 10px;
 }
 
+h1 {
+  text-align: center;
+}
+
+/* TABLE */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -23,30 +28,37 @@ th,
 td {
   border: 1px solid #ddd;
 }
+
 th {
   background-color: #007bff;
   color: white;
   padding: 12px;
 }
+
 td {
   padding: 10px;
   text-align: center;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+/* FLEXBOX LAYOUT */
+.flex-container {
+  display: flex;
+
   gap: 15px;
-  padding-right: 20px;
 }
 
+/* CARD */
 .city-card {
+  min-width: 110px;
   border: 2px solid #eee;
   padding: 20px;
   background-color: #fff;
   text-align: left;
+  border-radius: 8px;
 }
 
-.city-card h2 {
-  color: #007bff;
+@media (max-width: 600px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
 }
