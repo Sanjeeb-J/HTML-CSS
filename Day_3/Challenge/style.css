@@ -42,28 +42,20 @@ td {
 
 .flex-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 15px;
 }
 
 .city-card {
-  flex: 1 1 calc(33.33% - 15px);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   border: 2px solid #eee;
   padding: 20px;
   background-color: #fff;
   text-align: left;
   border-radius: 8px;
-}
-
-/* RESPONSIVE DESIGN */
-@media (max-width: 900px) {
-  .city-card {
-    flex: 1 1 calc(50% - 15px); /* 2 per row */
-  }
-}
-
-@media (max-width: 600px) {
-  .city-card {
-    flex: 1 1 100%; /* 1 per row */
-  }
 }
