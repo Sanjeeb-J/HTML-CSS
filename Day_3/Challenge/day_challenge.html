@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Day 3 Challenge Solution</title>
+    <style>
+      /* 1. Setup the Flex Container */
+      .flex-container {
+        min-height: 80vh;
+        border: 5px solid black;
+        display: flex;
+
+        /* Centering and Spacing */
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+      }
+
+      /* 2. Style the Cards */
+      .card {
+        height: 200px;
+        width: 250px;
+        background: blue;
+        color: white;
+        font-size: 24px;
+        display: flex; /* Flex inside flex to center text */
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+      }
+
+      /* 3. Responsive Direction */
+      @media (max-width: 600px) {
+        .flex-container {
+          flex-direction: column; /* Switches to vertical stack */
+          padding: 20px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="card">Basic</div>
+      <div class="card">Pro</div>
+      <div class="card">Ultimate</div>
+    </div>
+  </body>
+</html>
