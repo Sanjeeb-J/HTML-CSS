@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Day 4 Challenge</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        margin: 0;
+      }
+
+      nav {
+        background-color: #333;
+        padding: 15px;
+        position: sticky;
+        top: 0;
+      }
+
+      nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+      }
+
+      .section {
+        height: 600px;
+        padding-top: 50px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #00ff88;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Learning Bookmarks</h1>
+    </header>
+
+    <nav>
+      <a href="#html">HTML</a>
+      <a href="#css">CSS</a>
+      <a href="#js">Flexbox</a>
+    </nav>
+
+    <article>
+      <div id="html" class="section">
+        <h2>HTML</h2>
+        <p>HTML is the structure of the web.</p>
+      </div>
+
+      <div id="css" class="section">
+        <h2>CSS</h2>
+        <p>CSS is the style of the web.</p>
+      </div>
+
+      <div id="js" class="section">
+        <h2>Flexbox</h2>
+        <p>Flexbox is for easy layouts.</p>
+        <button type="button" onclick="alert('Challenge Done!')">
+          Finish Challenge
+        </button>
+      </div>
+    </article>
+  </body>
+</html>
