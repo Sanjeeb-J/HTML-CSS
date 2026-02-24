@@ -9,9 +9,18 @@
       body {
         min-height: 600px;
         border: 5px solid black;
+        display: flex;
+        gap: 10px;
       }
 
+      #box-1 {
+        flex-shrink: 2;
+      }
       .box {
+        flex-shrink: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 150px;
         width: 150px;
         background: blue;
