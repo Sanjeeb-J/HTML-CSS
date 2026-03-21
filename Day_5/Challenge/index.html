@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Day 5 Challenge</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding-top: 100px;
+        background-color: #f0f0f0;
+        font-family: sans-serif;
+      }
+
+      button {
+        padding: 15px 30px;
+        font-size: 18px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition:
+          background-color 0.4s ease-in-out,
+          box-shadow 0.4s ease-in-out;
+      }
+
+      button:hover {
+        background-color: #2ecc71;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .ball {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50%;
+        animation: bounce 1s ease-in-out infinite alternate;
+      }
+
+      @keyframes bounce {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(200px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>1. Hover Transition</h2>
+      <button type="button">Hover Me!</button>
+    </section>
+
+    <section>
+      <h2>2. Infinite Animation</h2>
+      <div class="ball"></div>
+    </section>
+  </body>
+</html>

@@ -10,21 +10,27 @@
         position: relative;
         animation-name: myAnimation;
         animation-duration: 5s;
+        animation-fill-mode: forwards;
       }
 
       #div1 {
+        /* Constant speed from start to end */
         animation-timing-function: linear;
       }
       #div2 {
+        /* Starts slow → speeds up → slows down at end */
         animation-timing-function: ease;
       }
       #div3 {
+        /* Starts slow → speeds up at the end */
         animation-timing-function: ease-in;
       }
       #div4 {
+        /* Starts fast → slows down at the end */
         animation-timing-function: ease-out;
       }
       #div5 {
+        /* Starts slow → speeds up → slows down */
         animation-timing-function: ease-in-out;
       }
 
