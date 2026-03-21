@@ -14,7 +14,6 @@
       font-family: sans-serif;
     }
 
-    /* 1. THE CARD: Using Transitions */
     .card {
       width: 300px;
       padding: 40px;
@@ -26,17 +25,15 @@
       cursor: pointer;
       border: 1px solid #444;
 
-      /* Transition: Property Duration Timing Delay */
       transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
     }
 
     .card:hover {
       background-color: #3d3d3d;
-      transform: scale(1.05); /* Slightly bigger on hover */
+      transform: scale(1.05); 
       box-shadow: 0px 10px 30px rgba(0, 255, 136, 0.3);
     }
 
-    /* 2. THE BADGE: Using Animations */
     .badge {
       width: 20px;
       height: 20px;
@@ -46,11 +43,9 @@
       top: -10px;
       right: -10px;
       
-      /* Animation Shorthand: Name Duration Timing Delay Iteration Direction */
       animation: pulse 1.5s ease-in-out infinite alternate;
     }
 
-    /* Keyframes for the pulsing effect */
     @keyframes pulse {
       from {
         transform: scale(1);
