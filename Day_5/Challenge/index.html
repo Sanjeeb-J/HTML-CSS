@@ -1,64 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Simple Day 5 Challenge</title>
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-        padding-top: 100px;
-        background-color: #f0f0f0;
-        font-family: sans-serif;
-      }
+<head>
+  <meta charset="UTF-8">
+  <title>Day 5: Motion Challenge</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
 
-      button {
-        padding: 15px 30px;
-        font-size: 18px;
-        background-color: #3498db;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition:
-          background-color 0.4s ease-in-out,
-          box-shadow 0.4s ease-in-out;
-      }
+    /* 1. THE CARD: Using Transitions */
+    .card {
+      width: 300px;
+      padding: 40px;
+      background-color: #2d2d2d;
+      color: white;
+      text-align: center;
+      border-radius: 15px;
+      position: relative;
+      cursor: pointer;
+      border: 1px solid #444;
 
-      button:hover {
-        background-color: #2ecc71;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-      }
+      /* Transition: Property Duration Timing Delay */
+      transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+    }
 
-      .ball {
-        width: 50px;
-        height: 50px;
-        background-color: red;
-        border-radius: 50%;
-        animation: bounce 1s ease-in-out infinite alternate;
-      }
+    .card:hover {
+      background-color: #3d3d3d;
+      transform: scale(1.05); /* Slightly bigger on hover */
+      box-shadow: 0px 10px 30px rgba(0, 255, 136, 0.3);
+    }
 
-      @keyframes bounce {
-        from {
-          transform: translateX(0);
-        }
-        to {
-          transform: translateX(200px);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <section>
-      <h2>1. Hover Transition</h2>
-      <button type="button">Hover Me!</button>
-    </section>
+    /* 2. THE BADGE: Using Animations */
+    .badge {
+      width: 20px;
+      height: 20px;
+      background-color: #00ff88;
+      border-radius: 50%;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      
+      /* Animation Shorthand: Name Duration Timing Delay Iteration Direction */
+      animation: pulse 1.5s ease-in-out infinite alternate;
+    }
 
-    <section>
-      <h2>2. Infinite Animation</h2>
-      <div class="ball"></div>
-    </section>
-  </body>
+    /* Keyframes for the pulsing effect */
+    @keyframes pulse {
+      from {
+        transform: scale(1);
+        opacity: 1;
+        box-shadow: 0 0 0px #00ff88;
+      }
+      to {
+        transform: scale(1.5);
+        opacity: 0.7;
+        box-shadow: 0 0 15px #00ff88;
+      }
+    }
+
+    h2 { color: #00ff88; }
+    p { color: #ccc; line-height: 1.5; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="badge"></div>
+    <h2>Pro Feature</h2>
+    <p>Hover over this card to see the <strong>Transition</strong>, and look at the green badge for the <strong>Animation</strong>.</p>
+  </div>
+
+</body>
 </html>

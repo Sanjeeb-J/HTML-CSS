@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages Hosting - Day 6</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #38bdf8;
+        }
+        code {
+            background-color: #333;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        pre {
+            background-color: #1e293b;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 1px solid #334155;
+            color: #f8fafc;
+        }
+        .step {
+            background: #2d2d2d;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 5px solid #38bdf8;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: skyblue;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Dashboard</a>
+        <h1>Hosting a Website using GitHub Pages</h1>
+
+        <section>
+            <h2>What is GitHub Pages?</h2>
+            <p><strong>GitHub Pages</strong> is a free hosting service provided by GitHub that allows you to publish <strong>static websites</strong> directly from a repository.</p>
+            <p>It supports: HTML, CSS, JavaScript (No backend like Node/DB).</p>
+        </section>
+
+        <section>
+            <h2>Step-by-Step Hosting Process</h2>
+
+            <div class="step">
+                <h3>1. Create a Repository</h3>
+                <ul>
+                    <li>Go to GitHub and click <strong>New Repository</strong>.</li>
+                    <li>Name it <code>username.github.io</code> (for main site) or any name for a project.</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>2. Add Your Website Files</h3>
+                <p>Upload your files. The entry point <strong>must</strong> be named <code>index.html</code>.</p>
+                <pre><code>/my-website
+ ├── index.html
+ ├── style.css
+ └── script.js</code></pre>
+            </div>
+
+            <div class="step">
+                <h3>3. Push Code (Local Git)</h3>
+                <pre><code>git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/username/repo-name.git
+git push -u origin main</code></pre>
+            </div>
+
+            <div class="step">
+                <h3>4. Enable GitHub Pages</h3>
+                <ul>
+                    <li>Go to <strong>Repository → Settings</strong>.</li>
+                    <li>Scroll to <strong>Pages</strong> in the sidebar.</li>
+                    <li>Under <strong>Source</strong>: Select branch <code>main</code> and folder <code>/ (root)</code>.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>5. Get Your Live URL</h3>
+                <p>After a few seconds, your site will be live at:</p>
+                <code>https://username.github.io/repo-name</code>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome DevTools - Day 6</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #00ff88;
+        }
+        code {
+            background-color: #333;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        pre {
+            background-color: #2d2d2d;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 1px solid #444;
+        }
+        blockquote {
+            border-left: 4px solid #00ff88;
+            padding-left: 20px;
+            margin-left: 0;
+            font-style: italic;
+            background: #252525;
+            padding: 10px 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: skyblue;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Dashboard</a>
+        <h1>Chrome DevTools</h1>
+
+        <section>
+            <h2>1. What is Chrome DevTools?</h2>
+            <p>Chrome DevTools is a <strong>set of developer tools built into Google Chrome</strong> that helps developers understand, debug, and improve websites.</p>
+            <p>You can use it to:</p>
+            <ul>
+                <li>Inspect HTML & CSS (see structure and design)</li>
+                <li>Debug JavaScript (fix logic errors)</li>
+                <li>Analyze performance (find slow parts)</li>
+                <li>Monitor network requests (APIs, files)</li>
+                <li>Test responsive design (mobile view)</li>
+            </ul>
+            <blockquote>
+                “DevTools lets you see what is happening behind the website.”
+            </blockquote>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>How to Open DevTools:</h3>
+            <ul>
+                <li>Right click → <strong>Inspect</strong></li>
+                <li><code>Ctrl + Shift + I</code> (Windows/Linux)</li>
+                <li><code>Cmd + Option + I</code> (Mac)</li>
+                <li><code>F12</code></li>
+            </ul>
+            <blockquote>
+                You can open DevTools on <strong>any website</strong>, not just your own.
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>2. DevTools Interface Overview</h2>
+            <p>When DevTools opens, it can look complex. Here is the layout clearly explained:</p>
+            <h3>Main Parts:</h3>
+            <ul>
+                <li><strong>Panel Tabs</strong> → Elements, Console, Network, etc.</li>
+                <li><strong>Toolbar</strong> → Controls and settings</li>
+                <li><strong>Main Panel Area</strong> → Where you work</li>
+                <li><strong>Drawer (bottom panel)</strong> → Extra tools</li>
+            </ul>
+            <blockquote>
+                “Each tab solves a different type of problem.”
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>3. Elements Panel</h2>
+            <h3>Purpose:</h3>
+            <p>Used to <strong>inspect and edit HTML & CSS in real-time</strong>. This is the most used panel for beginners.</p>
+            <ul>
+                <li><strong>Inspect Element</strong>: Click the inspect icon, hover over elements to highlight them, and click to select them in the HTML.</li>
+                <li><strong>Edit HTML</strong>: Double click text to change content, or right-click → <strong>Edit as HTML</strong>.</li>
+                <li><strong>Styles Pane</strong>: Shows all CSS applied to the selected element. You can add new styles, disable them (uncheck), or modify values.</li>
+                <li><strong>Box Model</strong>: Shows Content, Padding, Border, and Margin to help understand spacing.</li>
+                <li><strong>Computed Styles</strong>: Shows final styles after all CSS is applied.</li>
+                <li><strong>Responsive Mode</strong>: Toggle the device toolbar to select mobile devices and change screen dimensions.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Console Panel</h2>
+            <h3>Purpose:</h3>
+            <p>Used to <strong>run JavaScript and see errors</strong>.</p>
+            <pre><code>console.log("Hello")
+console.error("Error")
+console.warn("Warning")</code></pre>
+            <ul>
+                <li><strong>Inspect Variables</strong>: Test code directly in the browser.</li>
+                <li><strong>Select Elements</strong>: <code>document.querySelector("h1")</code></li>
+                <li><strong>Shortcuts</strong>: <code>$0</code> for current element, <code>clear()</code> to clear console.</li>
+                <li><strong>YouTube Hack</strong>: <code>document.querySelector('video').playbackRate=3;</code></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Sources Panel (JavaScript Debugging)</h2>
+            <h3>Purpose:</h3>
+            <p>Used for <strong>debugging JavaScript step-by-step</strong>.</p>
+            <ul>
+                <li><strong>File Navigation</strong>: See all JS files loaded on the page.</li>
+                <li><strong>Breakpoints</strong>: Click line number to pause execution.</li>
+                <li><strong>Step Controls</strong>: Step over, Step into, and Resume.</li>
+                <li><strong>Watch Variables</strong>: Track values in real-time.</li>
+                <li><strong>Call Stack</strong>: See function execution flow.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Network Panel</h2>
+            <h3>Purpose:</h3>
+            <p>Shows all <strong>network requests made by the page</strong>.</p>
+            <ul>
+                <li><strong>Reload Page</strong>: You must reload to see the initial requests.</li>
+                <li><strong>Types</strong>: Fetch/XHR, JS, CSS, Images, etc.</li>
+                <li><strong>Status Codes</strong>: 200 (Success), 404 (Not Found), 500 (Server Error).</li>
+                <li><strong>Throttling</strong>: Simulate slow internet.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>7. Application Panel</h2>
+            <h3>Purpose:</h3>
+            <p>View and manage <strong>data stored in the browser</strong> (Local Storage, Session Storage, Cookies).</p>
+        </section>
+
+        <section>
+            <h2>8. Performance & Lighthouse</h2>
+            <ul>
+                <li><strong>Performance</strong>: Analyze website speed, FPS, and CPU usage.</li>
+                <li><strong>Lighthouse</strong>: Audit performance, SEO, accessibility, and best practices.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>11. Useful Shortcuts</h2>
+            <table>
+                <tr>
+                    <th>Action</th>
+                    <th>Shortcut</th>
+                </tr>
+                <tr>
+                    <td>Open DevTools</td>
+                    <td>F12</td>
+                </tr>
+                <tr>
+                    <td>Command Menu</td>
+                    <td>Ctrl + Shift + P</td>
+                </tr>
+                <tr>
+                    <td>Find file</td>
+                    <td>Ctrl + P</td>
+                </tr>
+                <tr>
+                    <td>Search in files</td>
+                    <td>Ctrl + Shift + F</td>
+                </tr>
+                <tr>
+                    <td>Device mode</td>
+                    <td>Ctrl + Shift + M</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
