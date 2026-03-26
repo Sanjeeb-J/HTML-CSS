@@ -9,7 +9,7 @@ let message = age >= 18 ? "You are an adult" : "You are a minor";
 console.log(message);
 
 let time = 9;
-let greeting = time < 12 ? "おはようございます!" : "こんにちは";
+let greeting = time < 12 ? "Good Moring!" : "Good Afternoon";
 console.log(greeting);
 
 let isStudent = true;
@@ -19,5 +19,5 @@ console.log(msg);
 let purchaseAmount = 200;
 let discount = purchaseAmount >= 100 ? 10 : 0;
 console.log(
-  `Your total is $${purchaseAmount - purchaseAmount * (discount / 100)}`
+  `Your total is $${purchaseAmount - purchaseAmount * (discount / 100)}`,
 );

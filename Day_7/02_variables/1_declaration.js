@@ -1,5 +1,6 @@
 //declaration
 let x;
+
 //assignment
 x = 100;
 

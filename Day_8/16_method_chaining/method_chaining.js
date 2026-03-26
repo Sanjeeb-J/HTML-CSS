@@ -2,7 +2,7 @@
 
 // ------ NO METHOD CHAINING ------
 
-let username = window.prompt("Enter your username: ");
+let username = "         sfdsj        ";
 
 username = username.trim();
 let letter = username.charAt(0);

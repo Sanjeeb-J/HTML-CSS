@@ -4,7 +4,7 @@
 //  != inequality operator
 // !== strict inequality operator
 
-let PI = "3.14";
+let PI = 3.14;
 
 console.log(typeof PI);
 
