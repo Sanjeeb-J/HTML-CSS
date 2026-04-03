@@ -87,6 +87,58 @@
       .btn-challenge:hover {
         opacity: 0.8;
       }
+
+      /* Exercise Dropdown Styles */
+      .exercise-container {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      .btn-exercise {
+        flex: 1;
+        background-color: #444;
+        color: #fff;
+        border: 1px solid #555;
+        padding: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.85rem;
+        transition: all 0.2s;
+        font-weight: bold;
+      }
+
+      .btn-exercise:hover {
+        background-color: #555;
+      }
+
+      .btn-exercise.active {
+        background-color: #00ff88;
+        color: #1a1a1a;
+        border-color: #00ff88;
+      }
+
+      .exercise-dropdown {
+        display: none;
+        background-color: #3d3d3d;
+        padding: 15px;
+        border-radius: 6px;
+        margin-top: 10px;
+        font-size: 0.9rem;
+        border-left: 4px solid #00ff88;
+        color: #ccc;
+        line-height: 1.4;
+      }
+
+      .exercise-dropdown.show {
+        display: block;
+      }
+
+      .exercise-dropdown strong {
+        color: #00ff88;
+        display: block;
+        margin-bottom: 5px;
+      }
     </style>
   </head>
   <body>
@@ -102,10 +154,10 @@
           <div>
             <h2>Day 1</h2>
             <ul class="lesson-list">
-              <li>▶ <a href="/Day_1/01. Basics/index.html">Basics</a></li>
+              <li>▶ <a href="/Day_01/01. Basics/index.html">Basics</a></li>
               <li>
                 <a
-                  href="/Day_1/01. Basics/challenge/index.html"
+                  href="/Day_01/01. Basics/challenge/index.html"
                   style="
                     display: block;
                     margin: 1px 0 1px 20px;
@@ -114,10 +166,10 @@
                   >Challenge</a
                 >
               </li>
-              <li>▶ <a href="/Day_1/02. Tags/inline.html">Tags</a></li>
+              <li>▶ <a href="/Day_01/02. Tags/inline.html">Tags</a></li>
               <li>
                 <a
-                  href="/Day_1/02. Tags/challenge/index.html"
+                  href="/Day_01/02. Tags/challenge/index.html"
                   style="
                     display: block;
                     margin: 1px 0 1px 20px;
@@ -134,7 +186,7 @@
             class="notes"
             >Notes</a
           >
-          <a href="Day_1/Challenge/index.html" class="btn-challenge"
+          <a href="Day_01/Challenge/index.html" class="btn-challenge"
             >Start Challenge</a
           >
         </div>
@@ -146,20 +198,20 @@
             <ul class="lesson-list">
               <li>
                 ▶
-                <a href="/Day_2/05_CSS_Color_Schemes/index.html"
+                <a href="/Day_02/05_CSS_Color_Schemes/index.html"
                   >HTML & CSS Color Schemes</a
                 >
               </li>
               <li>▶ Some Basic CSS Property</li>
               <li>
                 ▶
-                <a href="/Day_2/06_CSS_Property/6_CSS Padding & Margin.html"
+                <a href="/Day_02/06_CSS_Property/6_CSS Padding & Margin.html"
                   >Box Model (Padding/Margin)</a
                 >
               </li>
               <li>
                 <a
-                  href="/Day_2/Challenge/06_challenge.html"
+                  href="/Day_02/Challenge/06_challenge.html"
                   style="
                     display: block;
                     margin: 1px 0 1px 20px;
@@ -176,7 +228,7 @@
             class="notes"
             >Notes</a
           >
-          <a href="/Day_2/Challenge/index.html" class="btn-challenge"
+          <a href="/Day_02/Challenge/index.html" class="btn-challenge"
             >Start Challenge</a
           >
         </div>
@@ -193,7 +245,7 @@
               <li>▶ Flex-wrap, Flex-shrink & Flex-grow</li>
               <li>
                 <a
-                  href="/Day_3/Challenge/day_challenge.html"
+                  href="/Day_03/Challenge/day_challenge.html"
                   style="
                     display: block;
                     margin: 1px 0 1px 20px;
@@ -209,7 +261,7 @@
             class="notes"
             >Notes</a
           >
-          <a href="/Day_3/Challenge/index.html" class="btn-challenge"
+          <a href="/Day_03/Challenge/index.html" class="btn-challenge"
             >Start Challenge</a
           >
         </div>
@@ -223,25 +275,25 @@
               <li>▶ ID vs Class</li>
               <li>
                 ▶
-                <a href="/Day_4/11_ID/3_bookmarks.html"
+                <a href="/Day_04/11_ID/3_bookmarks.html"
                   >Bookmarks & Smooth Scrolling</a
                 >
               </li>
               <li>
                 ▶
-                <a href="/Day_4/12_button/2_form.html"
+                <a href="/Day_04/12_button/2_form.html"
                   >Buttons (Submit, Reset, Button)</a
                 >
               </li>
-              <li>▶ <a href="/Day_4/13_Iframes/1.html">Iframes</a></li>
+              <li>▶ <a href="/Day_04/13_Iframes/1.html">Iframes</a></li>
               <li>
-                ▶ <a href="/Day_4/14_Layout/float.html">Float</a>,
-                <a href="Day_4/14_Layout/flexbox.html">Flex</a>, &
-                <a href="Day_4/15_grid/grid.html">Grid Layouts</a>
+                ▶ <a href="/Day_04/14_Layout/float.html">Float</a>,
+                <a href="Day_04/14_Layout/flexbox.html">Flex</a>, &
+                <a href="Day_04/15_grid/grid.html">Grid Layouts</a>
               </li>
               <li>
                 <a
-                  href="/Day_4/Challenge/day_challenge.html"
+                  href="/Day_04/Challenge/day_challenge.html"
                   style="
                     display: block;
                     margin: 1px 0 1px 20px;
@@ -257,7 +309,7 @@
             class="notes"
             >Notes</a
           >
-          <a href="/Day_4/Challenge/index.html" class="btn-challenge"
+          <a href="/Day_04/Challenge/index.html" class="btn-challenge"
             >Start Challenge</a
           >
         </div>
@@ -273,7 +325,7 @@
               <li>▶ Direction, Fill Mode & Shorthand</li>
               <li>
                 <a
-                  href="/Day_5/Challenge/daychallenge.html"
+                  href="/Day_05/Challenge/daychallenge.html"
                   style="
                     display: block;
                     margin: 1px 0 1px 20px;
@@ -289,7 +341,7 @@
             class="notes"
             >Notes</a
           >
-          <a href="/Day_5/Challenge/index.html" class="btn-challenge"
+          <a href="/Day_05/Challenge/index.html" class="btn-challenge"
             >Start Challenge</a
           >
         </div>
@@ -301,19 +353,19 @@
             <ul class="lesson-list">
               <li>
                 ▶
-                <a href="/Day_6/Chrome DevTools/devtools.html"
+                <a href="/Day_06/Chrome DevTools/devtools.html"
                   >Chrome DevTools</a
                 >
               </li>
               <li>
                 ▶
-                <a href="/Day_6/GitHub Pages Hosting/hosting.html"
+                <a href="/Day_06/GitHub Pages Hosting/hosting.html"
                   >GitHub Pages Hosting</a
                 >
               </li>
               <li>
                 ▶
-                <a href="/Day_6/static_site.html"> Portfolio</a>
+                <a href="/Day_06/static_site.html"> Portfolio</a>
               </li>
             </ul>
           </div>
@@ -322,11 +374,197 @@
             class="notes"
             >Notes</a
           >
-          <a href="/Day_6/Challenge/index.html" class="btn-challenge"
+          <a href="/Day_06/Challenge/index.html" class="btn-challenge"
             >Start Project</a
           >
         </div>
+
+        <!-- Day 7 -->
+        <div class="day-card">
+          <div>
+            <h2>Day 7</h2>
+            <ul class="lesson-list">
+              <li>▶ Connection with HTML & Outputs (Console, Alert)</li>
+              <li>▶ DOM Manipulation Basics (textContent)</li>
+              <li>▶ Variables (let vs const) & Data Types</li>
+              <li>▶ Arithmetic Operators & Type Conversion</li>
+              <li>▶ Math Object & Random Number Generation</li>
+            </ul>
+            <div class="exercise-container">
+              <button class="btn-exercise" onclick="toggleExercise(7, 'class', event)">Class Exercise</button>
+              <button class="btn-exercise" onclick="toggleExercise(7, 'home', event)">Home Exercise</button>
+            </div>
+            <div id="dropdown-7-class" class="exercise-dropdown">
+              <strong>Age Calculator:</strong>
+              Write a script that uses window.prompt() to ask for the user's birth year. Convert that input to a Number, calculate their current age, and display it using console.log() or a window.alert().
+            </div>
+            <div id="dropdown-7-home" class="exercise-dropdown">
+              <strong>Simple Web Calculator:</strong>
+              Create an HTML file with an empty &lt;h2&gt; block having id="result". Write a script that asks the user for two separate numbers using prompt(), adds them together, and updates the textContent of the &lt;h2&gt; block to show: "The sum is: [result]".
+            </div>
+          </div>
+          <a href="/Day_07/Day_7_Notes.md" class="notes">Notes</a>
+          <a href="/Day_07/Exercises/Class_Exercise/index.html" class="btn-challenge">Start Challenge</a>
+        </div>
+
+        <!-- Day 8 -->
+        <div class="day-card">
+          <div>
+            <h2>Day 8</h2>
+            <ul class="lesson-list">
+              <li>▶ If Statements & Checked Property</li>
+              <li>▶ Ternary Operator & Switch Statements</li>
+              <li>▶ String Methods (trim, upper, lower, indexOf)</li>
+              <li>▶ String Slicing & Method Chaining</li>
+              <li>▶ Logical Operators & Strict Equality</li>
+            </ul>
+            <div class="exercise-container">
+              <button class="btn-exercise" onclick="toggleExercise(8, 'class', event)">Class Exercise</button>
+              <button class="btn-exercise" onclick="toggleExercise(8, 'home', event)">Home Exercise</button>
+            </div>
+            <div id="dropdown-8-class" class="exercise-dropdown">
+              <strong>Greeting Formatter:</strong>
+              Ask the user for their name via prompt(). If they enter nothing, use an if statement to alert "Name is required". Otherwise, use string methods to alert their name in all uppercase.
+            </div>
+            <div id="dropdown-8-home" class="exercise-dropdown">
+              <strong>Terms & Conditions Validator:</strong>
+              Create an HTML page with a name input, a checkbox for "Accept Terms", and a Submit button. Check if name is not empty and checkbox is checked. Log welcome message or alert "must accept terms".
+            </div>
+          </div>
+          <a href="/Day_08/Day_8_Notes.md" class="notes">Notes</a>
+          <a href="/Day_08/Exercises/Class_Exercise/index.html" class="btn-challenge">Start Challenge</a>
+        </div>
+
+        <!-- Day 9 -->
+        <div class="day-card">
+          <div>
+            <h2>Day 9</h2>
+            <ul class="lesson-list">
+              <li>▶ While & Do-While Loops</li>
+              <li>▶ For Loops (Iterate, Continue, Break)</li>
+              <li>▶ Number Guessing Game Logic</li>
+              <li>▶ Functions (Declaration, Calling, Returns)</li>
+              <li>▶ Variable Scope (Global vs Local)</li>
+            </ul>
+            <div class="exercise-container">
+              <button class="btn-exercise" onclick="toggleExercise(9, 'class', event)">Class Exercise</button>
+              <button class="btn-exercise" onclick="toggleExercise(9, 'home', event)">Home Exercise</button>
+            </div>
+            <div id="dropdown-9-class" class="exercise-dropdown">
+              <strong>Even Number Printer:</strong>
+              Write a for loop that iterates from 1 to 20. Use an if statement inside the loop to check if the number is even, and if so, console.log() it.
+            </div>
+            <div id="dropdown-9-home" class="exercise-dropdown">
+              <strong>Temp Conversion Engine:</strong>
+              Write a function celsiusToFahrenheit(c) that returns the converted temp. Use a while loop to continuously ask for Celsius input. If "stop" is typed, break. Otherwise, log the conversion result.
+            </div>
+          </div>
+          <a href="/Day_09/Day_9_Notes.md" class="notes">Notes</a>
+          <a href="/Day_09/Exercises/Class_Exercise/index.html" class="btn-challenge">Start Challenge</a>
+        </div>
+
+        <!-- Day 10 -->
+        <div class="day-card">
+          <div>
+            <h2>Day 10</h2>
+            <ul class="lesson-list">
+              <li>▶ Arrays (push, pop, unshift, shift)</li>
+              <li>▶ Spread Operator (...) & Rest Parameters</li>
+              <li>▶ Array Callbacks (forEach, map, filter, reduce)</li>
+              <li>▶ Transformation & Iteration Methods</li>
+            </ul>
+            <div class="exercise-container">
+              <button class="btn-exercise" onclick="toggleExercise(10, 'class', event)">Class Exercise</button>
+              <button class="btn-exercise" onclick="toggleExercise(10, 'home', event)">Home Exercise</button>
+            </div>
+            <div id="dropdown-10-class" class="exercise-dropdown">
+              <strong>Favorite Foods Iterator:</strong>
+              Create an array of 5 favorite foods. Use .forEach() with a callback to print each food in a sentence: "I love [food]".
+            </div>
+            <div id="dropdown-10-home" class="exercise-dropdown">
+              <strong>Data Pipeline:</strong>
+              Create an array of numbers. Use .filter() for >10, .map() to multiply by 2, and .reduce() to find the sum. Log the final result.
+            </div>
+          </div>
+          <a href="/Day_10/Day_10_Notes.md" class="notes">Notes</a>
+          <a href="/Day_10/Exercises/Class_Exercise/index.html" class="btn-challenge">Start Challenge</a>
+        </div>
+
+        <!-- Day 11 -->
+        <div class="day-card">
+          <div>
+            <h2>Day 11</h2>
+            <ul class="lesson-list">
+              <li>▶ Function Expressions & Arrow Functions</li>
+              <li>▶ Objects (Properties & Methods)</li>
+              <li>▶ The 'this' Keyword & Object Context</li>
+              <li>▶ Constructors & Cookie-cutter Objects</li>
+              <li>▶ ES6 Classes (extends, super, static)</li>
+            </ul>
+            <div class="exercise-container">
+              <button class="btn-exercise" onclick="toggleExercise(11, 'class', event)">Class Exercise</button>
+              <button class="btn-exercise" onclick="toggleExercise(11, 'home', event)">Home Exercise</button>
+            </div>
+            <div id="dropdown-11-class" class="exercise-dropdown">
+              <strong>Student Object:</strong>
+              Create a student object with firstName, grade, and a study() method. study() should use 'this' to log: "[firstName] is studying hard!".
+            </div>
+            <div id="dropdown-11-home" class="exercise-dropdown">
+              <strong>Library Simulator:</strong>
+              Create a Book class (title, author) and a Library class with an array of books. Add methods to addBook and listBooks. Instantiate and test the library.
+            </div>
+          </div>
+          <a href="/Day_11/Day_11_Notes.md" class="notes">Notes</a>
+          <a href="/Day_11/Exercises/Class_Exercise/index.html" class="btn-challenge">Start Challenge</a>
+        </div>
+
+        <!-- Day 12 -->
+        <div class="day-card">
+          <div>
+            <h2>Day 12</h2>
+            <ul class="lesson-list">
+              <li>▶ Getters & Setters (Validation & Privacy)</li>
+              <li>▶ Destructuring (Array & Object)</li>
+              <li>▶ Nested Objects & Arrays of Objects</li>
+              <li>▶ Sorting Arrays (.sort() with Callbacks)</li>
+            </ul>
+            <div class="exercise-container">
+              <button class="btn-exercise" onclick="toggleExercise(12, 'class', event)">Class Exercise</button>
+              <button class="btn-exercise" onclick="toggleExercise(12, 'home', event)">Home Exercise</button>
+            </div>
+            <div id="dropdown-12-class" class="exercise-dropdown">
+              <strong>Movie Sorter:</strong>
+              Create an array of 3 movie objects (title, year). Sort them by year (oldest to newest) using .sort() and log each one.
+            </div>
+            <div id="dropdown-12-home" class="exercise-dropdown">
+              <strong>Bank Account Simulator:</strong>
+              Create a BankAccount class with a private balance property. Use a getter to format it ($0.00) and a setter to validate strictly positive deposits.
+            </div>
+          </div>
+          <a href="/Day_12/Day_12_Notes.md" class="notes">Notes</a>
+          <a href="/Day_12/Exercises/Class_Exercise/index.html" class="btn-challenge">Start Challenge</a>
+        </div>
       </div>
     </div>
+
+    <script>
+      function toggleExercise(day, type, event) {
+        const dropdownId = `dropdown-${day}-${type}`;
+        const dropdown = document.getElementById(dropdownId);
+        const card = dropdown.closest('.day-card');
+        const btn = event.currentTarget;
+        
+        const isCurrentlyShowing = dropdown.classList.contains('show');
+        
+        // Close all other dropdowns and deactivate all buttons in this card
+        card.querySelectorAll('.exercise-dropdown').forEach(d => d.classList.remove('show'));
+        card.querySelectorAll('.btn-exercise').forEach(b => b.classList.remove('active'));
+        
+        if (!isCurrentlyShowing) {
+          dropdown.classList.add('show');
+          btn.classList.add('active');
+        }
+      }
+    </script>
   </body>
 </html>
