@@ -1,6 +1,7 @@
 // array = a variable like structure that can hold more than 1 value
-
 let fruits = ["apple", "orange", "banana"];
+console.log(fruits);
+console.log(" ");
 
 // Add an element at the end
 fruits.push("coconut");
