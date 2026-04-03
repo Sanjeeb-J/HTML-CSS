@@ -1,5 +1,5 @@
 //Strings
-let firstName = "Sanjeeb";
+let firstName = "Jhon";
 let favFood = "Pizza";
 
 console.log(typeof firstName);
