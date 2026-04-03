@@ -23,7 +23,6 @@ randomNum = Math.floor(Math.random() * 60) + 10;
 console.log(randomNum);
 
 // Genarte number from range of 50 to 150
-// Don't use it
 randomNum = Math.floor(Math.random() * max) + min;
 console.log(randomNum);
 
