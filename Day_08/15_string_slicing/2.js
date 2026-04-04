@@ -3,7 +3,7 @@
 
 //                  string. slice(start, end)
 
-const fullName = "Sanjeeb J";
+const fullName = "Harry Potter";
 
 let firstName = fullName.slice(0, fullName.indexOf(" "));
 let lastName = fullName.slice(fullName.indexOf(" ") + 1);

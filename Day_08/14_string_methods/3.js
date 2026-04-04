@@ -4,7 +4,7 @@
   includes
 */
 
-let u = " Sanjeeb J";
+let u = " Harry";
 
 let r = u.startsWith(" ");
 
@@ -14,7 +14,7 @@ if (r) {
   console.log(u);
 }
 
-let us = "Sanjeeb J ";
+let us = "Harry ";
 
 let re = us.endsWith(" ");
 
@@ -24,7 +24,7 @@ if (re) {
   console.log(us);
 }
 
-let Name = "Sanjeeb J";
+let Name = "Harry Potter";
 
 let result = Name.includes(" ");
 

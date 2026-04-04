@@ -1,4 +1,4 @@
-// Switch = ca be efficient replacement to many else if statements
+// Switch = can be efficient replacement to many else if statements
 
 let day = "1";
 day = Number(day);

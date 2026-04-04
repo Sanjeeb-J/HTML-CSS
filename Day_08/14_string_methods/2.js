@@ -1,4 +1,4 @@
-let userName = "   Sanjeeb J     ";
+let userName = "   David     ";
 
 // trim() = used to remove white spaces form left and right of the string
 userName = userName.trim();

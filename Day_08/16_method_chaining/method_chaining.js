@@ -2,7 +2,7 @@
 
 // ------ NO METHOD CHAINING ------
 
-let username = "         sfdsj        ";
+let username = "         harry        ";
 
 username = username.trim();
 let letter = username.charAt(0);
