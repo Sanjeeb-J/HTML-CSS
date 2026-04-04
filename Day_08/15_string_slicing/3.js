@@ -5,4 +5,3 @@ let extension = email.slice(email.indexOf("@") + 1);
 
 console.log(username);
 console.log(extension);
-``;

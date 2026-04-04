@@ -1,6 +1,6 @@
 // string methods = allow you to manipulate and work with text (strings)
 
-let user = "Jhon";
+let user = "Jhnon";
 
 // charAt() = find "letter" at particular index
 console.log(user.charAt(0));
