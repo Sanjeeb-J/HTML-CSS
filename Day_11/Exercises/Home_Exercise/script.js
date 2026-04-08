@@ -1,5 +1,8 @@
-// Home Exercise: Library Simulator (Classes)
-// 1. Create a Book class with a constructor that takes title and author.
-// 2. Create a Library class with an internal array of books. Create .addBook(book) and .listBooks() methods.
-// 3. Instantiate a Library object, instantiate 2 Book objects, add them, and list them.
+// 1. Use .filter() to get prices over 20.
+// 2. Use .map() (with arrow functions) to add a 10% tax (multiply by 1.1).
+// 3. Use .reduce() to find the total sum.
+// Log the final result.
 
+let prices = [15, 30, 25, 10, 50];
+
+// Your code here

@@ -27,129 +27,45 @@ const nums = [1, 2, 3];
 const squares = nums.map(x => x * x);
 ```
 
----
+## 3. Built-in Array Iteration Methods
 
-## 3. Objects
+Instead of using standard `for` or `while` loops, JavaScript has robust built-in methods designed specifically for array iteration and transformation. These methods all use **callbacks**.
 
-An object is a collection of related properties and/or methods. It's essentially a dictionary of key-value pairs representing a single entity.
+### 3.1 forEach()
+Executes a provided callback function once for each array element without returning a new array.
 
 ```javascript
-const person1 = {
-    firstName: "Sanjeeb",
-    lastName: "J",
-    age: 30,
-    isEmployed: true,
-    sayHello: function() { console.log(`Hello!`); }
-}
+let students = ["Spongebob", "Patrick", "Squidward"];
 
-const person2 = {
-    firstName: "Patrick",
-    lastName: "Star",
-    age: 42,
-    isEmployed: false
-}
+students.forEach((element, index, array) => {
+    array[index] = element[0].toUpperCase() + element.substring(1);
+    console.log(array[index]);
+});
 ```
 
----
-
-## 4. The `this` Keyword
-
-`this` references the object where it is used. It depends on the execution context. Inside an object's method, `this` refers to the object itself.
+### 3.2 map()
+Creates a **new array** populated with the results of calling the provided callback function on every element in the calling array.
 
 ```javascript
-const person = {
-    firstName: "Sanjeeb",
-    sayHello: function() { 
-        console.log(`Hello I am ${this.firstName}`); 
-    }
-}
-person.sayHello(); // Outputs "Hello I am Sanjeeb"
+let nums = [1, 2, 3, 4, 5];
+let squares = nums.map(element => Math.pow(element, 2));
 ```
 
----
-
-## 5. Constructors
-
-A constructor is a special method for defining the properties and methods of objects. Think of it as a factory for turning out cookie-cutter objects. Instead of copying `person1`, `person2`, you create a blueprint.
+### 3.3 filter()
+Creates a **new array** with all elements that pass the test implemented by the provided function.
 
 ```javascript
-function Car(make, model, year, color) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-    this.color = color;
-    this.drive = function() { console.log(`You drive the ${this.model}`); }
-}
-
-const car1 = new Car("Ford", "Mustang", 2024, "red");
+let ages = [18, 16, 21, 17, 19, 90];
+let adults = ages.filter(element => element >= 18);
 ```
 
----
-
-## 6. Classes
-
-ES6 introduced `class` which provides a much cleaner syntactical sugar for standard prototype-based inheritance and constructors.
+### 3.4 reduce()
+Executes a "reducer" callback on each element, resulting in a **single output value**. Perfect for summing lists.
 
 ```javascript
-class Product {
-    constructor(name, price) {
-        this.name = name;
-        this.price = price;
-    }
-
-    displayProduct() {
-        console.log(`Product: ${this.name}`);
-        console.log(`Price: $${this.price.toFixed(2)}`);
-    }
-}
-
-const product1 = new Product("Shirt", 19.99);
-```
-
----
-
-## 7. Static Methods
-
-The `static` keyword defines properties or methods that belong to the *class itself*, not the *objects* created from the class.
-
-```javascript
-class MathUtil {
-    static PI = 3.14159;
-    static getDiameter(radius) { 
-        return radius * 2; 
-    }
-}
-
-console.log(MathUtil.PI); // Accessible without instantiating
-```
-
----
-
-## 8. Inheritance & `super`
-
-Classes can inherit properties and methods from other classes using `extends`. 
-The `super` keyword is used to call the constructor or access the properties and methods of a parent class.
-
-```javascript
-class Animal {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    move(speed) {
-        console.log(`The ${this.name} moves at ${speed}mph`);
-    }
-}
-
-class Rabbit extends Animal {
-    constructor(name, age, runSpeed) {
-        super(name, age); // Calls the Animal constructor
-        this.runSpeed = runSpeed;
-    }
-}
-
-const rabbit = new Rabbit("Bugs", 5, 20);
-rabbit.move(rabbit.runSpeed);
+let prices = [5, 30, 10, 25, 15, 20];
+let total = prices.reduce((accumulator, element) => accumulator + element);
+console.log(total); // 105
 ```
 
 <br>
@@ -157,11 +73,13 @@ rabbit.move(rabbit.runSpeed);
 ## ⭐ Exercises
 
 ### 𝓝 Class Exercise (Simple)
-**Student Object:**
-Create an object called `student` with properties `firstName`, `grade`, and a method `study()`. When `study()` is called, it should use the `this` keyword to `console.log()` a string like: "[firstName] is studying hard!". Call the method to test it.
+**Arrow Function Filter:**
+Create an array of numbers. Use `.filter()` with an arrow function to find all numbers greater than 10. Log the resulting array.
 
 ### 🏠 Home Exercise (Level Up)
-**Library Simulator (Classes):**
-1. Create a `Book` class with a constructor that takes `title` and `author`.
-2. Create a `Library` class that has an internal array of books (initialize it as empty in the constructor). Create a method `.addBook(book)` and a method `.listBooks()` inside the `Library` class that loops through and logs all books.
-3. Instantiate a Library object, instantiate 2 Book objects, add them to the library, and list them to the console.
+**Data Pipeline (Chaining Methods):**
+Create an array of product prices (e.g., `let prices = [5, 12, 8, 130, 44]`). 
+1. Use `.filter()` to get prices over $20.
+2. Use `.map()` (with arrow functions) to add a 10% tax.
+3. Use `.reduce()` to find the total sum.
+Log the final result to the console!

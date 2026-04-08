@@ -475,7 +475,7 @@
         </div>
 
         <!-- Day 9 -->
-        <!-- <div class="day-card">
+        <div class="day-card">
           <div>
             <h2>Day 9</h2>
             <ul class="lesson-list">
@@ -513,17 +513,18 @@
             </div>
           </div>
           <a href="/Day_09/Day_9_Notes.md" class="notes">Notes</a>
-        </div> -->
+        </div>
 
         <!-- Day 10 -->
-        <!-- <div class="day-card">
+        <div class="day-card">
           <div>
             <h2>Day 10</h2>
             <ul class="lesson-list">
               <li>▶ Arrays (push, pop, unshift, shift)</li>
               <li>▶ Spread Operator (...) & Rest Parameters</li>
-              <li>▶ Array Callbacks (forEach, map, filter, reduce)</li>
-              <li>▶ Transformation & Iteration Methods</li>
+              <li>▶ Dice Roller Program</li>
+              <li>▶ Random Password Generator</li>
+              <li>▶ Callbacks</li>
             </ul>
             <div class="exercise-container">
               <button
@@ -540,30 +541,28 @@
               </button>
             </div>
             <div id="dropdown-10-class" class="exercise-dropdown">
-              <strong>Favorite Foods Iterator:</strong>
-              Create an array of 5 favorite foods. Use .forEach() with a
-              callback to print each food in a sentence: "I love [food]".
+              <strong>Password Generator logic:</strong>
+              Write a simple function createPin() that uses Math.random() 
+              to generate and return a 4-digit numeric PIN as a string. Log the PIN.
             </div>
             <div id="dropdown-10-home" class="exercise-dropdown">
-              <strong>Data Pipeline:</strong>
-              Create an array of numbers. Use .filter() for >10, .map() to
-              multiply by 2, and .reduce() to find the sum. Log the final
-              result.
+              <strong>Dice Roller Callback:</strong>
+              Create a function rollDice(callback) that generates a random number between 1 and 6, 
+              and passes that number to the callback function.
             </div>
           </div>
           <a href="/Day_10/Day_10_Notes.md" class="notes">Notes</a>
-        </div> -->
+        </div>
 
         <!-- Day 11 -->
-        <!-- <div class="day-card">
+        <div class="day-card">
           <div>
             <h2>Day 11</h2>
             <ul class="lesson-list">
-              <li>▶ Function Expressions & Arrow Functions</li>
-              <li>▶ Objects (Properties & Methods)</li>
-              <li>▶ The 'this' Keyword & Object Context</li>
-              <li>▶ Constructors & Cookie-cutter Objects</li>
-              <li>▶ ES6 Classes (extends, super, static)</li>
+              <li>▶ Array Iteration (forEach, map)</li>
+              <li>▶ Array Iteration (filter, reduce)</li>
+              <li>▶ Function Expressions</li>
+              <li>▶ Arrow Functions</li>
             </ul>
             <div class="exercise-container">
               <button
@@ -580,59 +579,18 @@
               </button>
             </div>
             <div id="dropdown-11-class" class="exercise-dropdown">
-              <strong>Student Object:</strong>
-              Create a student object with firstName, grade, and a study()
-              method. study() should use 'this' to log: "[firstName] is studying
-              hard!".
+              <strong>Arrow Function Filter:</strong>
+              Create an array of numbers. Use .filter() with an arrow function 
+              to find all numbers greater than 10. Log the resulting array.
             </div>
             <div id="dropdown-11-home" class="exercise-dropdown">
-              <strong>Library Simulator:</strong>
-              Create a Book class (title, author) and a Library class with an
-              array of books. Add methods to addBook and listBooks. Instantiate
-              and test the library.
+              <strong>Data Pipeline (Chaining Methods):</strong>
+              Create an array of product prices. Use .filter() to get prices over $20, 
+              use .map() to add a 10% tax, and .reduce() to find the total sum.
             </div>
           </div>
           <a href="/Day_11/Day_11_Notes.md" class="notes">Notes</a>
-        </div> -->
-
-        <!-- Day 12 -->
-        <!-- <div class="day-card">
-          <div>
-            <h2>Day 12</h2>
-            <ul class="lesson-list">
-              <li>▶ Getters & Setters (Validation & Privacy)</li>
-              <li>▶ Destructuring (Array & Object)</li>
-              <li>▶ Nested Objects & Arrays of Objects</li>
-              <li>▶ Sorting Arrays (.sort() with Callbacks)</li>
-            </ul>
-            <div class="exercise-container">
-              <button
-                class="btn-exercise"
-                onclick="toggleExercise(12, 'class', event)"
-              >
-                Class Exercise
-              </button>
-              <button
-                class="btn-exercise"
-                onclick="toggleExercise(12, 'home', event)"
-              >
-                Home Exercise
-              </button>
-            </div>
-            <div id="dropdown-12-class" class="exercise-dropdown">
-              <strong>Movie Sorter:</strong>
-              Create an array of 3 movie objects (title, year). Sort them by
-              year (oldest to newest) using .sort() and log each one.
-            </div>
-            <div id="dropdown-12-home" class="exercise-dropdown">
-              <strong>Bank Account Simulator:</strong>
-              Create a BankAccount class with a private balance property. Use a
-              getter to format it ($0.00) and a setter to validate strictly
-              positive deposits.
-            </div>
-          </div>
-          <a href="/Day_12/Day_12_Notes.md" class="notes">Notes</a>
-        </div> -->
+        </div>
       </div>
     </div>
 

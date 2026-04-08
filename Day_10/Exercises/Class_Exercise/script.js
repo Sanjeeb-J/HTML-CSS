@@ -1,4 +1,10 @@
-// Class Exercise: Favorite Foods Iterator
-// Create an array of 5 of your favorite foods.
-// Use the .forEach() array method along with a callback function to print each food out: "I love [food]".
+// Write a simple function createPin() that uses Math.random() 
+// to generate and return a 4-digit numeric PIN as a string. 
+// Log the PIN to the console.
 
+function createPin() {
+    // Your code here
+}
+
+// Test your function
+// console.log(createPin());

@@ -1,10 +1,9 @@
-// Class Exercise Solution: Student Object
-const student = {
-    firstName: "Alice",
-    grade: "A",
-    study: function() {
-        console.log(this.firstName + " is studying hard!");
-    }
-};
+// Create an array of numbers. 
+// Use .filter() with an arrow function to find all numbers greater than 10. 
+// Log the resulting array.
 
-student.study();
+let numbers = [5, 12, 8, 20, 3, 15];
+
+let greaterThanTen = numbers.filter(num => num > 10);
+
+console.log(greaterThanTen);

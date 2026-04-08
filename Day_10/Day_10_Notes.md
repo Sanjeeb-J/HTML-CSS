@@ -72,59 +72,37 @@ hello(goodbye); // Output: Hello! Goodbye!
 
 ---
 
-## 5. Built-in Array Iteration Methods
+## 5. Dice Roller Program
 
-Instead of using standard `for` or `while` loops, JavaScript has robust built-in methods designed specifically for array iteration and transformation. These methods all use **callbacks**.
-
-### 5.1 forEach()
-Executes a provided callback function once for each array element without returning a new array.
+A common exercise to practice random numbers and DOM manipulation (if using HTML) or just basic JS concepts.
 
 ```javascript
-let students = ["Spongebob", "Patrick", "Squidward"];
-
-students.forEach(capitalize);
-
-function capitalize(element, index, array) {
-    array[index] = element[0].toUpperCase() + element.substring(1);
-    console.log(array[index]);
+// Simple dice roller
+function rollDice() {
+    return Math.floor(Math.random() * 6) + 1;
 }
+
+console.log(`You rolled a ${rollDice()}`);
 ```
 
-### 5.2 map()
-Creates a **new array** populated with the results of calling the provided callback function on every element in the calling array.
+---
+
+## 6. Random Password Generator
+
+Generating a random password involves picking random characters from an array or a string of allowed characters.
 
 ```javascript
-let nums = [1, 2, 3, 4, 5];
-let squares = nums.map(square);
-
-function square(element) {
-    return Math.pow(element, 2);
+function generatePassword(length) {
+    const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
+    let password = "";
+    for(let i = 0; i < length; i++) {
+        let randomIndex = Math.floor(Math.random() * chars.length);
+        password += chars[randomIndex];
+    }
+    return password;
 }
-```
 
-### 5.3 filter()
-Creates a **new array** with all elements that pass the test implemented by the provided function.
-
-```javascript
-let ages = [18, 16, 21, 17, 19, 90];
-let adults = ages.filter(checkAge);
-
-function checkAge(element) {
-    return element >= 18;
-}
-```
-
-### 5.4 reduce()
-Executes a "reducer" callback on each element, resulting in a **single output value**. Perfect for summing lists.
-
-```javascript
-let prices = [5, 30, 10, 25, 15, 20];
-let total = prices.reduce(sum);
-
-function sum(accumulator, element) {
-    return accumulator + element;
-}
-console.log(total); // 105
+console.log(generatePassword(10));
 ```
 
 <br>
@@ -132,13 +110,11 @@ console.log(total); // 105
 ## ⭐ Exercises
 
 ### 𝓝 Class Exercise (Simple)
-**Favorite Foods Iterator:**
-Create an array of 5 of your favorite foods. Use the `.forEach()` array method along with a callback function to print each food out in the console structured as a sentence: "I love [food]".
+**Password Generator logic:**
+Write a simple function `createPin()` that uses `Math.random()` to generate and return a 4-digit numeric PIN as a string. Log the PIN to the console.
 
 ### 🏠 Home Exercise (Level Up)
-**Data Pipeline (Chaining Methods):**
-Create an array of numbers (e.g., `let numbers = [5, 12, 8, 130, 44]`). 
-1. Use `.filter()` to get only numbers greater than 10.
-2. Use `.map()` to multiply those remaining numbers by 2.
-3. Use `.reduce()` to find the sum of this final array.
-Log the final result to the console!
+**Dice Roller Callback:**
+1. Create a function `rollDice(callback)` that generates a random number between 1 and 6.
+2. It should then pass that number to the `callback` function.
+3. Call `rollDice` and pass in an arrow function (or normal function) that logs: "You rolled a [number]!".

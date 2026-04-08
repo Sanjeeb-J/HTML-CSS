@@ -1,26 +1,13 @@
-// Home Exercise Solution: Library Simulator (Classes)
-class Book {
-    constructor(title, author) {
-        this.title = title;
-        this.author = author;
-    }
-}
+// 1. Use .filter() to get prices over 20.
+// 2. Use .map() (with arrow functions) to add a 10% tax (multiply by 1.1).
+// 3. Use .reduce() to find the total sum.
+// Log the final result.
 
-class Library {
-    constructor() {
-        this.books = [];
-    }
-    addBook(book) {
-        this.books.push(book);
-    }
-    listBooks() {
-        for(let book of this.books) {
-            console.log(`"${book.title}" by ${book.author}`);
-        }
-    }
-}
+let prices = [15, 30, 25, 10, 50];
 
-let myLibrary = new Library();
-myLibrary.addBook(new Book("1984", "George Orwell"));
-myLibrary.addBook(new Book("Dune", "Frank Herbert"));
-myLibrary.listBooks();
+let total = prices
+    .filter(price => price > 20)
+    .map(price => price * 1.1)
+    .reduce((acc, price) => acc + price);
+
+console.log("Total after tax: $" + total.toFixed(2));
